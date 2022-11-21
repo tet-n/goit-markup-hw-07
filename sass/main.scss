@@ -1,8 +1,8 @@
 // Утіліти
 @import 'utils/variables';
 @import 'utils/visually-hidden';
-@import 'utils/placeholders';
 @import 'utils/mixins';
+@import 'utils/placeholders';
 
 // Базові стилі
 @import 'base/reset';
@@ -11,3 +11,4 @@
 // Компоненти
 @import 'components/logo-header';
 @import 'components/header';
+@import 'components/hero';
