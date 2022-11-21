@@ -12,10 +12,18 @@
 }
 
 // Перехід (анімація)
-@mixin transition($property) {
-  transition-property: $property;
+@mixin transition($property1, $property2: false, $property3: false) {
+  transition-property: $property1, $property2, $property3;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+
+  @if $property2 {
+    transition-property: $property2;
+  }
+
+  @if $property3 {
+    transition-property: $property3;
+  }
 }
 
 // Шрифти
@@ -79,4 +87,19 @@
     @warn '#{ $mode } is undefined keyword.';
     @return $number;
   }
+}
+
+// Cоціальні лінки
+
+@mixin socialLink($bgcolor, $color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $color;
+  background-color: $bgcolor;
 }
