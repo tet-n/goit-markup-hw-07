@@ -5,10 +5,14 @@
 @import 'utils/placeholders';
 
 // Базові стилі
+@import 'base/body';
 @import 'base/reset';
 @import 'base/container';
+@import 'base/section';
 
 // Компоненти
 @import 'components/logo-header';
 @import 'components/header';
 @import 'components/hero';
+@import 'components/features';
+@import 'components/occupation';

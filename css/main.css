@@ -8,7 +8,8 @@
   --color-bg-tretiary: #2f303a;
   --color-backdrop: rgba(0, 0, 0, 0.2);
   --color-bg-hero: rgba(47, 48, 58, 0.4);
-  --color-bg-card-overlay: rgba(33, 150, 243, 0.9);
+  --color-bg-overlay-primary: rgba(33, 150, 243, 0.9);
+  --color-bg-overlay-secondary: rgba(47, 48, 58, 0.8);
   --color-text-primary: #212121;
   --color-text-secondary: #ffffff;
   --color-text-treriary: #757575;
@@ -60,6 +61,16 @@
   border-radius: 4px;
 }
 
+.occupation__heading {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-primary);
+}
+
 body {
   font-family: var(--font-primary);
   font-style: normal;
@@ -95,6 +106,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .logo {
@@ -245,4 +260,80 @@ img {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--color-accent-secondary);
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
+}
+
+.features__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-bg-secondary);
+  margin-bottom: 30px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text-treriary);
+}
+
+.occupation--no-padding {
+  padding-top: 0;
+}
+
+.occupation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.occupation__thumb {
+  position: relative;
+}
+
+.occupation__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-bg-overlay-secondary);
+  color: var(--color-text-secondary);
 }/*# sourceMappingURL=main.css.map */

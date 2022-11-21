@@ -14,3 +14,10 @@
   border: none;
   border-radius: 4px;
 }
+
+%heading {
+  margin-bottom: 50px;
+  @include fonts(700, 36px, 42px, 0.03em);
+  text-align: center;
+  color: var(--color-text-primary);
+}
