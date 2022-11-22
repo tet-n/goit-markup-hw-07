@@ -18,12 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка -->
-    <header class="header header--border">
+    <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
 
@@ -42,19 +42,23 @@
         </nav>
         <ul class="contact__list list">
           <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link link" aria-label="Пошта іконка"
-              >info@devstudio.com
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact__link link"
+              aria-label="Пошта іконка"
+            >
               <svg width="16" height="12" class="contact__icon">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
+              info@devstudio
             </a>
           </li>
           <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link link" aria-label="Телефон іконка"
-              >+38 096 111 11 11
+            <a href="tel:+380961111111" class="contact__link link" aria-label="Телефон іконка">
               <svg width="10" height="16" class="contact__icon">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -66,9 +70,7 @@
       <!-- Проєкти' -->
       <section class="section projects">
         <div class="container projects__container">
-          <h1 class="heading projects__heading projects__heading--visually-hidden">
-            Продукція WebStudio
-          </h1>
+          <h1 class="heading projects__heading visually-hidden">Продукція WebStudio</h1>
           <ul class="filter__list list">
             <li class="filter__item">
               <button type="button" class="filter__btn btn--grey">Усі</button>
@@ -258,9 +260,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <!-- Контакти -->
-        <div class="footer__block">
+        <div class="footer__block footer__block--margin-rg">
           <a href="./index.html" class="logo footer__logo"
-            >Web<span class="footer__logo--accent">Studio</span></a
+            ><span class="logo--accent">Web</span>Studio</a
           >
           <address class="address">
             <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -313,9 +315,9 @@
         </div>
 
         <!-- Форма підписки -->
-        <div class="footer__block">
+        <div class="footer__block footer__block--ml">
           <p class="footer__text">Підпишіться на розсилку</p>
-          <form name="mailing-form">
+          <form name="mailing-form" class="mailing-form">
             <label for="email-mailing-form" class="mailing-form__label visually-hidden"
               >Email</label
             >
@@ -326,8 +328,8 @@
               placeholder="Email"
               id="email-mailing-form"
             />
-            <button type="submit" class="mailing-form__btn btn--blue">
-              Підписатися
+            <button type="submit" class="mailing-form__btn">
+              <span class="mailing-form__btn--margin-rg">Підписатися</span>
               <svg class="mailing-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#subscription"></use>
               </svg>
