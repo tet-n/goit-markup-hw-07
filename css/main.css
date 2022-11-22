@@ -249,9 +249,10 @@ img {
   padding-bottom: 200px;
   max-width: 1600px;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-bg-hero)), to(var(--color-bg-hero))), url("../../images/hero.jpg");
+  background-image: linear-gradient(to right, var(--color-bg-hero), var(--color-bg-hero)), url("../../images/hero.jpg");
   background-color: var(--color-bg-tretiary);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-bg-hero)), to(var(--color-bg-hero))), url(../../images/hero.jpg);
-  background-image: linear-gradient(var(--color-bg-hero), var(--color-bg-hero)), url(../../images/hero.jpg);
+  background-size: cover;
   background-position: center;
 }
 
