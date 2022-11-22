@@ -10,6 +10,7 @@
   background-image: linear-gradient(to right, var(--color-bg-hero), var(--color-bg-hero)),
     url(../../images/hero.jpg);
   background-color: var(--color-bg-tretiary);
+  background-size: cover;
 
   background-position: center;
 }
