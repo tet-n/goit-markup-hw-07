@@ -392,9 +392,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <!-- Контакти -->
-        <div class="footer__block">
+        <div class="footer__block footer__block--margin-rg">
           <a href="./index.html" class="logo footer__logo"
-            >Web<span class="footer__logo--accent">Studio</span></a
+            ><span class="logo--accent">Web</span>Studio</a
           >
           <address class="address">
             <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -447,9 +447,9 @@
         </div>
 
         <!-- Форма підписки -->
-        <div class="footer__block">
+        <div class="footer__block footer__block--ml">
           <p class="footer__text">Підпишіться на розсилку</p>
-          <form name="mailing-form">
+          <form name="mailing-form" class="mailing-form">
             <label for="email-mailing-form" class="mailing-form__label visually-hidden"
               >Email</label
             >
@@ -460,8 +460,8 @@
               placeholder="Email"
               id="email-mailing-form"
             />
-            <button type="submit" class="mailing-form__btn btn--blue">
-              Підписатися
+            <button type="submit" class="mailing-form__btn">
+              <span class="mailing-form__btn--margin-rg">Підписатися</span>
               <svg class="mailing-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#subscription"></use>
               </svg>

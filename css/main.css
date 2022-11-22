@@ -46,12 +46,12 @@
   margin: -1px;
 }
 
-.contact__link, .navigation__link, .logo {
+.address__link, .contact__link, .navigation__link, .logo {
   color: currentColor;
   text-decoration: none;
 }
 
-.hero__btn {
+.mailing-form__btn, .hero__btn {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
@@ -465,4 +465,195 @@ img {
 
 .clients__icon {
   fill: currentColor;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--color-bg-tretiary);
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: var(--color-text-secondary);
+}
+
+.footer__block--margin-rg {
+  margin-right: 91px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__text {
+  margin-bottom: 9px;
+  color: var(--color-text-secondary);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--color-text-footer-contacts);
+  -webkit-transition-property: color, false, false;
+  transition-property: color, false, false;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.address__link:hover, .address__link:focus {
+  color: var(--color-accent-primary);
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-text-secondary);
+  background-color: var(--color-icon-footer-bg);
+  -webkit-transition-property: background-color, false, false;
+  transition-property: background-color, false, false;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: var(--color-accent-primary);
+}
+
+.footer__social-icon {
+  fill: currentColor;
+}
+
+.footer__block--ml {
+  margin-left: auto;
+}
+
+.mailing-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.mailing-form__input {
+  letter-spacing: 0.03em;
+  padding: 14px 15px;
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border: 1px solid var(--color-border-subscribe-input);
+  border-radius: 4px;
+  outline: none;
+  -webkit-filter: drop-shadow(0px 4px 4px var(--color-shadow-primary));
+          filter: drop-shadow(0px 4px 4px var(--color-shadow-primary));
+  -webkit-transition-property: border-color, false, false;
+  transition-property: border-color, false, false;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.mailing-form__input::-webkit-input-placeholder {
+  color: var(--color-text-footer-contacts);
+}
+.mailing-form__input::-moz-placeholder {
+  color: var(--color-text-footer-contacts);
+}
+.mailing-form__input:-ms-input-placeholder {
+  color: var(--color-text-footer-contacts);
+}
+.mailing-form__input::-ms-input-placeholder {
+  color: var(--color-text-footer-contacts);
+}
+.mailing-form__input::placeholder {
+  color: var(--color-text-footer-contacts);
+}
+.mailing-form__input:hover, .mailing-form__input:focus {
+  border-color: var(--color-accent-primary);
+}
+
+.mailing-form__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  -webkit-transition-property: background-color, false, -webkit-box-shadow;
+  transition-property: background-color, false, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, false;
+  transition-property: background-color, box-shadow, false, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+}
+.mailing-form__btn:hover, .mailing-form__btn:focus {
+  background-color: var(--color-accent-secondary);
+  -webkit-box-shadow: 0px 4px 4px var(--color-shadow-primary);
+          box-shadow: 0px 4px 4px var(--color-shadow-primary);
+}
+
+.mailing-form__btn--margin-rg {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
