@@ -7,9 +7,10 @@
 
   text-align: center;
 
-  background-color: var(--color-bg-tretiary);
   background-image: linear-gradient(var(--color-bg-hero), var(--color-bg-hero)),
     url(../../images/hero.jpg);
+  background-color: var(--color-bg-tretiary);
+
   background-position: center;
 }
 
