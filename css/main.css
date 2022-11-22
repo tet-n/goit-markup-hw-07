@@ -23,11 +23,15 @@
   --color-border-subscribe-input: rgba(255, 255, 255, 0.3);
   --color-border-modal-input: rgba(33, 33, 33, 0.2);
   --color-border-header: #ececec;
+  --color-border-card: #eeeeee;
   --color-shadow-primary: rgba(0, 0, 0, 0.15);
   --color-shadow-secondary: rgba(47, 48, 58, 0.8);
   --color-shadow-team-card-one: rgba(0, 0, 0, 0.12);
   --color-shadow-team-card-two: rgba(0, 0, 0, 0.14);
   --color-shadow-team-card-three: rgba(0, 0, 0, 0.2);
+  --color-shadow-card-one: rgba(0, 0, 0, 0.12);
+  --color-shadow-card-two: rgba(0, 0, 0, 0.06);
+  --color-shadow-card-three: rgba(0, 0, 0, 0.16);
   --color-shadow-filter-one: rgba(0, 0, 0, 0.1);
   --color-shadow-filter-two: rgba(0, 0, 0, 0.08);
   --color-shadow-filter-three: rgba(0, 0, 0, 0.12);
@@ -50,7 +54,7 @@
   margin: -1px;
 }
 
-.address__link, .contact__link, .navigation__link, .logo {
+.card-set__link, .address__link, .contact__link, .navigation__link, .logo {
   color: currentColor;
   text-decoration: none;
 }
@@ -711,6 +715,97 @@ img {
   background-color: var(--color-accent-primary);
   -webkit-box-shadow: 0px 3px 1px var(--color-shadow-filter-one), 0px 1px 2px var(--color-shadow-filter-two), 0px 2px 2px var(--color-shadow-filter-three);
           box-shadow: 0px 3px 1px var(--color-shadow-filter-one), 0px 1px 2px var(--color-shadow-filter-two), 0px 2px 2px var(--color-shadow-filter-three);
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-set__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+}
+
+.card-set__link {
+  display: block;
+  -webkit-transition-property: false, false, -webkit-box-shadow;
+  transition-property: false, false, -webkit-box-shadow;
+  transition-property: box-shadow, false, false;
+  transition-property: box-shadow, false, false, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.card-set__link:hover, .card-set__link:focus {
+  -webkit-box-shadow: 0px 1px 1px var(--color-shadow-card-one), 0px 4px 4px var(--color-shadow-card-two), 1px 4px 6px var(--color-shadow-card-three);
+          box-shadow: 0px 1px 1px var(--color-shadow-card-one), 0px 4px 4px var(--color-shadow-card-two), 1px 4px 6px var(--color-shadow-card-three);
+}
+
+.card-set__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-set__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(0, 101%);
+          transform: translate(0, 101%);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-overlay-primary);
+  -webkit-transition-property: false, false, -webkit-transform;
+  transition-property: false, false, -webkit-transform;
+  transition-property: transform, false, false;
+  transition-property: transform, false, false, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.card-set__link:hover .card-set__overlay, .card-set__link:focus .card-set__overlay {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.card-set__wrapper {
+  padding: 20px 23px 19px;
+  border: 1px solid var(--color-border-card);
+  border-top: none;
+}
+
+.card-set__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-set__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-text-treriary);
 }
 
 .backdrop {
