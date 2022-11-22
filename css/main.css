@@ -52,7 +52,7 @@
   text-decoration: none;
 }
 
-.mailing-form__btn, .hero__btn {
+.order-form__btn, .mailing-form__btn, .hero__btn {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
@@ -749,6 +749,10 @@ img {
   fill: currentColor;
 }
 
+.order-form {
+  text-align: center;
+}
+
 .order-form__text {
   margin-bottom: 12px;
   font-weight: 700;
@@ -812,6 +816,10 @@ img {
   fill: var(--color-accent-primary);
 }
 
+.order-form__label--mb {
+  margin-bottom: 20px;
+}
+
 .order-form__textarea {
   display: block;
   padding: 11px 15px;
@@ -832,4 +840,81 @@ img {
 }
 .order-form__textarea:hover, .order-form__textarea:focus {
   border-color: var(--color-accent-primary);
+}
+
+.order-form__check-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text-treriary);
+}
+
+.order-form__check-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid var(--color-text-primary);
+  border-radius: 2px;
+  -webkit-transition-property: background-color, border-color, false;
+  transition-property: background-color, border-color, false;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
+}
+
+.order-form__check-input:checked {
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-accent-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-origin: border-box;
+}
+
+.order-form__check-link {
+  color: var(--color-accent-primary);
+  text-underline-offset: 3px;
+}
+
+.order-form__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 52px;
+  padding-right: 52px;
+  -webkit-transition-property: background-color, false, -webkit-box-shadow;
+  transition-property: background-color, false, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, false;
+  transition-property: background-color, box-shadow, false, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+}
+.order-form__btn:hover, .order-form__btn:focus {
+  background-color: var(--color-accent-secondary);
+  -webkit-box-shadow: 0px 4px 4px var(--color-shadow-primary);
+          box-shadow: 0px 4px 4px var(--color-shadow-primary);
 }/*# sourceMappingURL=main.css.map */
