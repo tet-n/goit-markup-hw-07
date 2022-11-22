@@ -28,6 +28,9 @@
   --color-shadow-team-card-one: rgba(0, 0, 0, 0.12);
   --color-shadow-team-card-two: rgba(0, 0, 0, 0.14);
   --color-shadow-team-card-three: rgba(0, 0, 0, 0.2);
+  --color-shadow-filter-one: rgba(0, 0, 0, 0.1);
+  --color-shadow-filter-two: rgba(0, 0, 0, 0.08);
+  --color-shadow-filter-three: rgba(0, 0, 0, 0.12);
   --gap-projects-list: 30px;
   --number-items: 3;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,6 +58,7 @@
 .order-form__btn, .mailing-form__btn, .hero__btn {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -661,6 +665,52 @@ img {
 
 .mailing-form__btn--margin-rg {
   margin-right: 10px;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filter__btn {
+  padding: 6px 22px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
+}
+.filter__btn:hover, .filter__btn:focus {
+  color: var(--color-text-secondary);
+  background-color: var(--color-accent-primary);
+  -webkit-box-shadow: 0px 3px 1px var(--color-shadow-filter-one), 0px 1px 2px var(--color-shadow-filter-two), 0px 2px 2px var(--color-shadow-filter-three);
+          box-shadow: 0px 3px 1px var(--color-shadow-filter-one), 0px 1px 2px var(--color-shadow-filter-two), 0px 2px 2px var(--color-shadow-filter-three);
 }
 
 .backdrop {
